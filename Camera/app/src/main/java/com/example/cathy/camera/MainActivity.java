@@ -557,20 +557,15 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
         @Override
         public void run() {
             try {
-       //         int flag=0;
-       //         for(int i=0;i<=1;i++){
-       //             if(flag==0){
-                        Thread pic_out = new Thread(client_picture);
-                        pic_out.start();
-                        pic_out.join();
-        //            }
-       //             else{
-                        sleep(3800);
-                        Thread txt_in = new Thread(client_txt);
-                        txt_in.start();
-                        txt_in.join();
-       //             }
-       //         }
+                Thread pic_out = new Thread(client_picture);
+                pic_out.start();
+                pic_out.join();
+
+                //sleep(3800);
+
+                /*Thread txt_in = new Thread(client_txt);
+                txt_in.start();
+                txt_in.join();*/
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -603,7 +598,8 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
                             //輸出到server
                             outputstream.write(mybytearray, 0, mybytearray.length);
                             outputstream.flush();
-                            outputstream.close();
+                            socket_out.shutdownOutput();
+//                            outputstream.close();
                             bis.close();
                             fis.close();
                             Log.d("4","4");
@@ -613,6 +609,45 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
                         }
                     }
 
+                    while(true){
+                        try {
+                            BufferedReader bfr = new BufferedReader(new InputStreamReader(socket_out.getInputStream()));
+                            String ready = bfr.readLine();
+                            Log.d("ready",ready);
+                            if (ready.equals("OK")) {
+                                Log.d("recv","ready");
+                                break;
+                            }
+                        }catch (Exception e){}
+                    }
+
+                    //接收文字檔
+                    File accept_file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).getPath(), "back.txt");
+                    Log.d("path",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).getPath());
+
+                    BufferedReader br = new BufferedReader(new InputStreamReader(socket_out.getInputStream()));
+                    FileOutputStream output = new FileOutputStream(accept_file);
+                    OutputStreamWriter osw = new OutputStreamWriter(output);
+                    //osw.write(" ");
+                    while(true) {
+                        try {
+                            socket_out.setSoTimeout(500);
+                            String a = br.readLine();
+//                        Log.d("a"," a");
+                            if (a == null) {
+                                break;
+                            } else {
+                                Log.d("br", a);
+                                osw.append(a + "\n");
+                            }
+                        }catch (IOException e){
+                            break;
+                        }
+                    }
+                    Log.d("txt","close");
+                    osw.close();
+                    output.flush();
+                    output.close();
 
                 } catch (Exception e) {
 
@@ -620,8 +655,9 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
 
                 } finally {
                     Log.d("notify","notify");
-                    socket_out.close();
+//                    socket_out.close();
                     Log.d("socket_out","close");
+                    text_to_speach.run();
                 }
             } catch (Exception e) {
 
@@ -629,7 +665,7 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
 
         }
     };
-
+/*
    Runnable client_txt = new Runnable() {
 
         @Override
@@ -647,8 +683,6 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
                         //接收文字檔
                         File accept_file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).getPath(), "back.txt");
                         Log.d("path",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).getPath());
-                        //InputStreamReader isr =new  InputStreamReader(socket_in.getInputStream());
-                        // Log.d("isr",isr.toString());
 
                         BufferedReader br = new BufferedReader(new InputStreamReader(socket_in.getInputStream()));
                         FileOutputStream output = new FileOutputStream(accept_file);
@@ -684,7 +718,7 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
         }
 
     };
-
+*/
     Runnable text_to_speach = new Runnable() {
         @Override
         public void run() {

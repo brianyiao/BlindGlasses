@@ -777,7 +777,7 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
                 break;
             case "horse":
                 object="馬";
-                unit="隻";
+                unit="匹";
                 break;
             case "truck":
                 object="卡車";
@@ -787,6 +787,289 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
                 object="腳踏車";
                 unit="輛";
                 break;
+            case "person":
+                object="人";
+                unit="個";
+                break;
+            case "car":
+                object="車";
+                unit="輛";
+                break;
+            case "motorbike":
+                object="摩托車";
+                unit="輛";
+                break;
+            case "aeroplane":
+                object="飛機";
+                unit="架";
+                break;
+            case "bus":
+                object="巴士";
+                unit="輛";
+                break;
+            case "train":
+                object="火車";
+                unit="輛";
+                break;
+            case "boat":
+                object="船";
+                unit="艘";
+                break;
+            case "traffic light":
+                object="紅綠燈";
+                unit="個";
+                break;
+            case "fire hydrant":
+                object="消防栓";
+                unit="個";
+                break;
+            case "stop sign":
+                object="停止標誌";
+                unit="個";
+                break;
+            case "bench":
+                object="長椅";
+                unit="張";
+                break;
+            case "bird":
+                object="鳥";
+                unit="隻";
+                break;
+            case "cat":
+                object="貓";
+                unit="隻";
+                break;
+            case "sheep":
+                object="綿羊";
+                unit="隻";
+                break;
+            case "cow":
+                object="牛";
+                unit="頭";
+                break;
+            case "elephant":
+                object="大象" ;
+                unit="隻";
+                break;
+            case "bear":
+                object="熊";
+                unit="頭";
+                break;
+            case "zebra":
+                object="斑馬" ;
+                unit="隻";
+                break;
+            case "giraffe":
+                object="長頸鹿" ;
+                unit="隻";
+                break;
+            case "backpack":
+                object="背包" ;
+                unit="個";
+                break;
+            case "umbrella":
+                object="雨傘" ;
+                unit="把";
+                break;
+            case "handbag":
+                object="手提包" ;
+                unit="個";
+                break;
+            case "tie":
+                object="領帶" ;
+                unit="個";
+                break;
+            case "suitcase":
+                object="行李箱" ;
+                unit="個";
+                break;
+            case "frisbee":
+                object="飛盤" ;
+                unit="個";
+                break;
+            case "skis":
+                object="滑雪板" ;
+                unit="個";
+                break;
+            case "kite":
+                object="風箏" ;
+                unit="個";
+                break;
+            case "baseball bat":
+                object="球棒" ;
+                unit="支";
+                break;
+            case "baseball glove":
+                object="棒球手套" ;
+                unit="個";
+                break;
+            case "skateboard":
+                object="滑板" ;
+                unit="個";
+                break;
+            case "surfboard":
+                object="衝浪板" ;
+                unit="個";
+                break;
+            case "tennis racket":
+                object="網球拍" ;
+                unit="個";
+                break;
+            case "bottle":
+                object="瓶子" ;
+                unit="瓶";
+                break;
+            case "wine glass":
+                object="紅酒杯" ;
+                unit="杯";
+                break;
+            case "cup":
+                object="杯子" ;
+                unit="個";
+                break;
+            case "fork":
+                object="叉子" ;
+                unit="個";
+                break;
+            case "knife":
+                object="刀子" ;
+                unit="把";
+                break;
+            case "spoon":
+                object="湯匙" ;
+                unit="支";
+                break;
+            case "bowl":
+                object="碗" ;
+                unit="碗";
+                break;
+            case "banana":
+                object="香蕉" ;
+                unit="支";
+                break;
+            case "apple":
+                object="蘋果" ;
+                unit="顆";
+                break;
+            case "sandwich":
+                object="三明治" ;
+                unit="個";
+                break;
+            case "orange":
+                object="柳橙" ;
+                unit="顆";
+                break;
+            case "carrot":
+                object="胡蘿蔔" ;
+                unit="根";
+                break;
+            case "hot dog":
+                object="熱狗" ;
+                unit="根";
+                break;
+            case "pizza":
+                object="皮薩" ;
+                unit="片";
+                break;
+            case "donut":
+                object="甜甜圈" ;
+                unit="個";
+                break;
+            case "cake":
+                object="蛋糕" ;
+                unit="塊";
+                break;
+            case "chair":
+                object="椅子" ;
+                unit="張";
+                break;
+            case "sofa":
+                object="沙發" ;
+                unit="張";
+                break;
+            case "pottedplant":
+                object="盆栽" ;
+                unit="盆";
+                break;
+            case "bed":
+                object="床" ;
+                unit="張";
+                break;
+            case "diningtable":
+                object="餐桌" ;
+                unit="張";
+                break;
+            case "toilet":
+                object="廁所" ;
+                unit="間";
+                break;
+            case "tvmonitor":
+                object="電視螢幕" ;
+                unit="台";
+                break;
+            case "laptop":
+                object="筆記本電腦" ;
+                unit="台";
+                break;
+            case "mouse":
+                object="老鼠" ;
+                unit="隻";
+                break;
+            case "keyboard":
+                object="鍵盤" ;
+                unit="副";
+                break;
+            case "cell phone":
+                object="電話" ;
+                unit="台";
+                break;
+            case "microwave":
+                object="微波爐" ;
+                unit="台";
+                break;
+            case "oven":
+                object="烤箱" ;
+                unit="台";
+                break;
+            case "toaster":
+                object="烤麵包機" ;
+                unit="台";
+                break;
+            case "refrigerator":
+                object="冰箱" ;
+                unit="台";
+                break;
+            case "book":
+                object="書" ;
+                unit="本";
+                break;
+            case "clock":
+                object="時鐘" ;
+                unit="個";
+                break;
+            case "vase":
+                object="花瓶" ;
+                unit="個";
+                break;
+            case "scissors":
+                object="剪刀" ;
+                unit="";
+                break;
+            case "teddy bear":
+                object="泰迪熊" ;
+                unit="隻";
+                break;
+            case "hair===" +
+                    "drier":
+                object="吹風機" ;
+                unit="把";
+                break;
+            case "toothbrush":
+                object="牙刷" ;
+                unit="隻";
+                break;
+
+
         }
         engine.setPitch(pitchRate);
         engine.setSpeechRate(speedRate);

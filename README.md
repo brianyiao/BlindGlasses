@@ -1,7 +1,7 @@
 # BlindGlasses
 
 ## 環境安裝
-==作業系統：Ubuntu 16.04==
+**作業系統：Ubuntu 16.04**
 ### Android Studio
 (1)到官網下載Android Studio安裝檔(https://developer.android.com/studio/)
 ![image](https://github.com/brianyiao/BlindGlasses/blob/master/01.JPG)

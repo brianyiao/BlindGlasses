@@ -4,6 +4,7 @@
 ==作業系統：Ubuntu 16.04==
 ### Android Studio
 (1)到官網下載Android Studio安裝檔(https://developer.android.com/studio/)
+![image](https://github.com/brianyiao/BlindGlasses/blob/master/01.JPG)
 (2)
 
 ### Nvidia驅動與cuda9.0安裝

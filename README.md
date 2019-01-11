@@ -7,24 +7,31 @@
 ![image](https://github.com/brianyiao/BlindGlasses/blob/master/01.JPG)
 
 (2)打勾後按「DOWNLOAD ANDROIDSTUDIO FOR WINDOWS」 
+
 ![image](https://github.com/brianyiao/BlindGlasses/blob/master/02.JPG)
 
 (3)按「Next>」 
+
 ![image](https://github.com/brianyiao/BlindGlasses/blob/master/04.JPG)
  
 (4)按「Next>」 
+
 ![image](https://github.com/brianyiao/BlindGlasses/blob/master/05.JPG)
  
 (5)按「Next>」 
+
 ![image](https://github.com/brianyiao/BlindGlasses/blob/master/06.JPG)   
        
 (6)按「Install」 
+
 ![image](https://github.com/brianyiao/BlindGlasses/blob/master/07.JPG)
  
 (7)按「Next>」 
+
 ![image](https://github.com/brianyiao/BlindGlasses/blob/master/09.JPG)   
 
 (8)按「Finish」 
+
 ![image](https://github.com/brianyiao/BlindGlasses/blob/master/10.JPG)
 
 ### Nvidia驅動與cuda9.0安裝
